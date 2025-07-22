@@ -251,5 +251,56 @@
       &copy; 2025 Votre Guide d'arrosage
     </p>
   </footer>
+
+<style>
+  .img-fullscreen {
+    position: fixed !important;
+    top: 0; left: 0;
+    width: 100vw !important;
+    height: 100vh !important;
+    object-fit: contain !important;
+    background: rgba(0,0,0,0.96);
+    z-index: 9999;
+    margin: 0 !important;
+    box-shadow: none !important;
+    border-radius: 0 !important;
+    cursor: zoom-out;
+    display: block !important;
+  }
+  .img-backdrop {
+    position: fixed; top:0; left:0; width:100vw; height:100vh;
+    z-index: 9998;
+    background: rgba(0,0,0,0.7);
+    display: block;
+  }
+</style>
+<script>
+  document.querySelectorAll('.card img').forEach(function(img) {
+    img.style.cursor = 'zoom-in';
+    img.addEventListener('click', function(e) {
+      if (!img.classList.contains('img-fullscreen')) {
+        // Affiche en plein écran
+        img.classList.add('img-fullscreen');
+        let backdrop = document.createElement('div');
+        backdrop.className = 'img-backdrop';
+        backdrop.onclick = function() {
+          img.classList.remove('img-fullscreen');
+          backdrop.remove();
+          document.body.style.overflow = '';
+        };
+        document.body.appendChild(backdrop);
+        document.body.style.overflow = 'hidden';
+      } else {
+        // Retour à la taille normale
+        img.classList.remove('img-fullscreen');
+        let backdrop = document.querySelector('.img-backdrop');
+        if (backdrop) backdrop.remove();
+        document.body.style.overflow = '';
+      }
+      e.stopPropagation();
+    });
+  });
+</script>
+
 </body>
 </html>
