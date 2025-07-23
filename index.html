@@ -1,306 +1,473 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Guide d'arrosage des plantes</title>
-  <link rel="icon" href="plant.png" type="image/x-icon">
-  <style>
-    /* Reset basique */
-    * { box-sizing: border-box; margin: 0; padding: 0; }
-    body { font-family: Arial, sans-serif; line-height: 1.6; color: #333; background: #f9f9f9; }
-    header, nav, section, footer { padding: 1rem; }
-    header { background: #4caf50; color: white; text-align: center; }
-    nav { background: #fff; border-bottom: 2px solid #ddd; position: sticky; top: 0; z-index: 1000; }
-    nav ul { display: flex; justify-content: center; list-style: none; }
-    nav a { padding: 0.75rem 1.5rem; text-decoration: none; color: #4caf50; font-weight: bold; }
-    nav a:hover { background: #4caf50; color: #fff; }
-    .container { max-width: 1200px; margin: auto; padding: 1rem; }
-    .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem; }
-    .card { background: #fff; border: 1px solid #ddd; border-radius: 8px; overflow: hidden; box-shadow: 0 2px 4px rgba(0,0,0,0.1); }
-    .card img { width: 100%; height: 200px; object-fit: contain; }
-    .card-content { padding: 1rem; }
-    .card-content h3 { margin-bottom: 0.5rem; color: #4caf50; }
-    .card-content p { margin-bottom: 0.75rem; }
-    .card-content a { color: #2196f3; text-decoration: none; }
-    .card-content a:hover { text-decoration: underline; }
-    footer { text-align: center; margin-top: 2rem; font-size: 0.9rem; }
-    @media (max-width: 600px) {
-      nav ul { flex-direction: column; }
-      nav a { text-align: center; }
-    }
-  </style>
-</head>
-<body>
-  <header>
-    <h1>Guide d'arrosage des plantes</h1>
-  </header>
-  <nav>
-    <ul>
-      <li><a href="#interieur">Intérieur</a></li>
-      <li><a href="#exterieur">Extérieur</a></li>
-    </ul>
-  </nav>
-  <main class="container">
-    <!-- Section Plantes d'intérieur -->
-    <section id="interieur">
-      <h2>Plantes d'intérieur</h2>
-      <div class="grid">
-        <!-- Papyrus -->
-        <div class="card">
-          <img src="images/papyrus.jpg" alt="Papyrus - feuilles et fleurs">
-          <div class="card-content">
-            <h3>Papyrus</h3>
-            <p><strong>Arrosage :</strong> Arroser de façon à ce que l'eau arrive presque au bord du haut du pot. Il aime avoir les pieds dans l'eau.</p>
-            <p><a href="https://www.jardiland.com/conseils-idees/papyrus-varietes-plantation-entretien-utilisations#quel-entretien-est-necessaire" target="_blank">Plus d'infos</a></p>
-          </div>
-        </div>
-        <!-- Begonia bambou/maculata -->
-        <div class="card">
-          <img src="images/begonia-bambou.jpg" alt="Begonia bambou ou maculata - feuilles et fleurs">
-          <div class="card-content">
-            <h3>Begonia bambou / maculata</h3>
-            <p><strong>Arrosage :</strong> Lorsque la surface du sol est sèche, environ 1 fois par semaine. Ne pas laisser d'eau stagnante.</p>
-            <p><a href="https://plantespourtous.co/collections/plantes-lumineuses/products/begonia-maculata" target="_blank">Plus d'infos</a></p>
-          </div>
-        </div>
-        <!-- Plante ZZ -->
-        <div class="card">
-          <img src="images/plante-zz.jpg" alt="Plante ZZ - feuilles">
-          <div class="card-content">
-            <h3>Plante ZZ</h3>
-            <p><strong>Arrosage :</strong> Très modéré, laisser sécher complètement entre deux arrosages (tous les 2-3 semaines).</p>
-            <p><a href="https://plantespourtous.co/products/zamioculcas-zamiifolia" target="_blank">Plus d'infos</a></p>
-          </div>
-        </div>
-        <!-- Géranium rosat -->
-        <div class="card">
-          <img src="images/geranium-rosat.jpg" alt="Géranium rosat - feuilles et fleurs">
-          <div class="card-content">
-            <h3>Géranium rosat</h3>
-            <p><strong>Arrosage :</strong> Modéré, laisser sécher légèrement entre deux arrosages. Environ 2 fois par semaine.</p>
-            <p><a href="https://www.picturethisai.com/fr/care/Pelargonium_graveolens.html" target="_blank">Plus d'infos</a></p>
-          </div>
-        </div>
-        <!-- Petit plant d'avocat -->
-        <div class="card">
-          <img src="images/avocatier-jeune.jpg" alt="Petit plant d'avocat - feuilles">
-          <div class="card-content">
-            <h3>Petit plant d'avocat</h3>
-            <p><strong>Arrosage :</strong> Garder le sol légèrement humide. Arroser modérément 1 fois par semaine.</p>
-            <p><a href="https://avocatier.fr/entretien-d-un-avocatier-en-pot" target="_blank">Plus d'infos</a></p>
-          </div>
-        </div>
-        <!-- Petit plant de manguier -->
-        <div class="card">
-          <img src="images/manguier-jeune.jpg" alt="Petit plant de manguier - feuilles">
-          <div class="card-content">
-            <h3>Petit plant de manguier</h3>
-            <p><strong>Arrosage :</strong> Sol légèrement humide, environ 1 fois par semaine.</p>
-            <p><a href="https://www.ledevoir.com/plaisirs/jardinage/815538/noyau-manguier" target="_blank">Plus d'infos</a></p>
-          </div>
-        </div>
-        <!-- Dragonnier (Dracaena) -->
-        <div class="card">
-          <img src="images/dracaena.jpg" alt="Dragonnier - feuilles">
-          <div class="card-content">
-            <h3>Dragonnier (Dracaena marginata)</h3>
-            <p><strong>Arrosage :</strong> Modéré, laisser sécher les 2 cm supérieurs du sol. Environ 1 fois par semaine.</p>
-            <p><a href="https://plantespourtous.co/products/dracaena-marginata-bicolor" target="_blank">Plus d'infos</a></p>
-          </div>
-        </div>
-        <!-- Orpin de Siebold (Sedum Sieboldii) -->
-        <div class="card">
-          <img src="images/sedum-sieboldii.jpg" alt="Orpin de Siebold - feuilles et fleurs">
-          <div class="card-content">
-            <h3>Orpin de Siebold (Sedum Sieboldii)</h3>
-            <p><strong>Arrosage :</strong> Très peu, 1 fois toutes les 2 semaines. Laisser sécher complètement.</p>
-            <p><a href="https://www.willemsefrance.fr/blogs/nos-guides-de-jardinage/arrosage-du-sedum-conseils-pour-une-croissance-saine-1" target="_blank">Plus d'infos</a></p>
-          </div>
-        </div>
-        <!-- Cactus de Noël -->
-        <div class="card">
-          <img src="images/cactus-noel.jpg" alt="Cactus de Noël - feuilles et fleurs">
-          <div class="card-content">
-            <h3>Cactus de Noël</h3>
-            <p><strong>Arrosage :</strong> Modéré en période de croissance (été), environ 1 fois par semaine; réduire en hiver.</p>
-            <p><a href="https://www.picturethisai.com/fr/question/Schlumbergera_truncata-water2.html" target="_blank">Plus d'infos</a></p>
-          </div>
-        </div>
-        <!-- Chlorophytum -->
-        <div class="card">
-          <img src="images/chlorophytum.jpg" alt="Chlorophytum - feuilles">
-          <div class="card-content">
-            <h3>Chlorophytum</h3>
-            <p><strong>Arrosage :</strong> Régulier, garder le sol légèrement humide, environ 1 fois par semaine.</p>
-            <p><a href="https://www.willemsefrance.fr/blogs/nos-guides-de-jardinage/comment-bien-arroser-votre-chlorophytum-1" target="_blank">Plus d'infos</a></p>
-          </div>
-        </div>
-        <!-- Potos -->
-        <div class="card">
-          <img src="images/pothos.jpg" alt="Potos - feuilles">
-          <div class="card-content">
-            <h3>Pothos</h3>
-            <p><strong>Arrosage :</strong> Modéré, laisser sécher légèrement, environ 1 fois par semaine.</p>
-            <p><a href="https://plantespourtous.co/products/scindapsus-marble-queen" target="_blank">Plus d'infos</a></p>
-          </div>
-        </div>
-        <!-- Misère flumensis -->
-        <div class="card">
-          <img src="images/misere-flumensis.jpg" alt="Misère flumensis - feuilles">
-          <div class="card-content">
-            <h3>Misère flumensis</h3>
-            <p><strong>Arrosage :</strong> Sol toujours humide, arroser 2 fois par semaine.</p>
-            <p><a href="https://www.picturethisai.com/fr/wiki/Tradescantia_fluminensis.html" target="_blank">Plus d'infos</a></p>
-          </div>
-        </div>
-        <!-- Gros thym (bouture en eau) -->
-        <div class="card">
-          <img src="images/thym-bouture.jpg" alt="Gros thym - bouture en eau">
-          <div class="card-content">
-            <h3>Gros thym (bouture en eau)</h3>
-            <p><strong>Arrosage :</strong> Changer l'eau 1 fois par semaine, garder la tige immergée.</p>
-            <p><a href="https://biostratege.com/le-gros-thym-plectranthus-amboinicus/" target="_blank">Plus d'infos</a></p>
-          </div>
-        </div>
-        <!-- Sensitive / Mimosa pudica -->
-        <div class="card">
-          <img src="images/mimosa-pudica.jpg" alt="Sensitive / Mimosa pudica - feuilles">
-          <div class="card-content">
-            <h3>Sensitive / Mimosa pudica</h3>
-            <p><strong>Arrosage :</strong> Sol légèrement humide, arroser 2-3 fois par semaine.</p>
-            <p><a href="https://www.truffaut.com/plante-sensitive-mimosa-pudica.html" target="_blank">Plus d'infos</a></p>
-          </div>
-        </div>
-      </div>
-    </section>
 
-    <!-- Section Plantes d'extérieur -->
-    <section id="exterieur">
-      <h2>Plantes d'extérieur</h2>
-      <div class="grid">
-        <!-- Begonia bambou/maculata ext -->
-        <div class="card">
-          <img src="images/begonia-bambou-ext.jpg" alt="Begonia bambou ou maculata extérieure">
-          <div class="card-content">
-            <h3>Begonia bambou / maculata</h3>
-            <p><strong>Arrosage :</strong> Modéré, 2 fois par semaine, laisser sécher légèrement entre.</p>
-            <p><a href="https://plantespourtous.co/collections/plantes-lumineuses/products/begonia-maculata/" target="_blank">Plus d'infos</a></p>
-          </div>
-        </div>
-        <!-- Verveine citronnelle -->
-        <div class="card">
-          <img src="images/verveine-citronnelle-ext.jpg" alt="Verveine citronnelle extérieure">
-          <div class="card-content">
-            <h3>Verveine citronnelle</h3>
-            <p><strong>Arrosage :</strong> 2 fois par semaine, laisser sécher légèrement.</p>
-            <p><a href="https://www.lapousseverte.fr/2021/06/04/verveine-citronnelle-conseils-jardinage-pour-votre-plante/" target="_blank">Plus d'infos</a></p>
-          </div>
-        </div>
-        <!-- Azalée / Rhododendron -->
-        <div class="card">
-          <img src="images/azalee-rhododendron.jpg" alt="Azalée / Rhododendron extérieure">
-          <div class="card-content">
-            <h3>Azalée / Rhododendron</h3>
-            <p><strong>Arrosage :</strong> Arroser par le bas en remplissant la soucoupe, 2 à 3 fois par semaine en période chaude.</p>
-            <p><a href="https://www.hauert.com/ch-fr/offre/particuliers/guide/detail/lazalee-comme-plante-dinterieur" target="_blank">Plus d'infos</a></p>
-          </div>
-        </div>
-        <!-- Gros thym (bouture en eau) ext -->
-        <div class="card">
-          <img src="images/thym-bouture-ext.jpg" alt="Gros thym - bouture en eau extérieure">
-          <div class="card-content">
-            <h3>Gros thym (bouture en eau)</h3>
-            <p><strong>Arrosage :</strong> Renouveler l'eau 1 fois par semaine, garder la tige immergée.</p>
-            <p><a href="https://biostratege.com/le-gros-thym-plectranthus-amboinicus/" target="_blank">Plus d'infos</a></p>
-          </div>
-        </div>
-        <!-- Petits plans d'agrumes -->
-        <div class="card">
-          <img src="images/agrumes-jeunes.jpg" alt="Petits plants d'agrumes extérieure">
-          <div class="card-content">
-            <h3>Petits plants d'agrumes</h3>
-            <p><strong>Arrosage :</strong> Modéré, 1-2 fois par semaine selon sécheresse du sol.</p>
-            <p><a href="https://www.pepiniere-vegetal85.fr/blog/post/8_entretien-des-agrumes-en-pot.html#:~:text=Il%20faut%20trouver%20le%20juste,semaine%2C%20selon%20vos%20conditions%20climatiques." target="_blank">Plus d'infos</a></p>
-          </div>
-        </div>
-        <!-- Misère flumensis ext -->
-        <div class="card">
-          <img src="images/misere-flumensis-ext.jpg" alt="Misère flumensis extérieure">
-          <div class="card-content">
-            <h3>Misère flumensis</h3>
-            <p><strong>Arrosage :</strong> Sol toujours humide, arroser 2 fois par semaine.</p>
-            <p><a href="https://www.picturethisai.com/fr/wiki/Tradescantia_fluminensis.html" target="_blank">Plus d'infos</a></p>
-          </div>
-        </div>
-        <!-- Ciboulette -->
-        <div class="card">
-          <img src="images/ciboulette.jpg" alt="Ciboulette extérieure">
-          <div class="card-content">
-            <h3>Ciboulette</h3>
-            <p><strong>Arrosage :</strong> Garder le sol humide, 2-3 fois par semaine.</p>
-            <p><a href="https://urbancuisine.io/blogs/le-mag/comment-cultiver-la-ciboulette-en-pot-en-interieur#:~:text=En%20r%C3%A8gle%20g%C3%A9n%C3%A9rale%2C%20arrosez%20donc,pourront%20absorber%20correctement%20l'eau." target="_blank">Plus d'infos</a></p>
-          </div>
-        </div>
-      </div>
-    </section>
-  </main>
-  <footer>
-    <p>
-      <img src="./plant.png" alt="Petite plante" style="height: 20px; vertical-align: middle; margin-right: 8px;">
-      &copy; 2025 Votre Guide d'arrosage
-    </p>
-  </footer>
-
-<style>
-  .img-fullscreen {
-    position: fixed !important;
-    top: 0; left: 0;
-    width: 100vw !important;
-    height: 100vh !important;
-    object-fit: contain !important;
-    background: rgba(0,0,0,0.96);
-    z-index: 9999;
-    margin: 0 !important;
-    box-shadow: none !important;
-    border-radius: 0 !important;
-    cursor: zoom-out;
-    display: block !important;
-  }
-  .img-backdrop {
-    position: fixed; top:0; left:0; width:100vw; height:100vh;
-    z-index: 9998;
-    background: rgba(0,0,0,0.7);
-    display: block;
-  }
-</style>
-<script>
-  document.querySelectorAll('.card img').forEach(function(img) {
-    img.style.cursor = 'zoom-in';
-    img.addEventListener('click', function(e) {
-      if (!img.classList.contains('img-fullscreen')) {
-        // Affiche en plein écran
-        img.classList.add('img-fullscreen');
-        let backdrop = document.createElement('div');
-        backdrop.className = 'img-backdrop';
-        backdrop.onclick = function() {
-          img.classList.remove('img-fullscreen');
-          backdrop.remove();
-          document.body.style.overflow = '';
-        };
-        document.body.appendChild(backdrop);
-        document.body.style.overflow = 'hidden';
-      } else {
-        // Retour à la taille normale
-        img.classList.remove('img-fullscreen');
-        let backdrop = document.querySelector('.img-backdrop');
-        if (backdrop) backdrop.remove();
-        document.body.style.overflow = '';
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guide d'arrosage des plantes</title>
+    <link rel="icon" href="plant.png" type="image/x-icon">
+    <style>
+      /* Reset basique */
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
       }
-      e.stopPropagation();
-    });
-  });
-</script>
 
-</body>
+      body {
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+        color: #333;
+        background: #f9f9f9;
+      }
+
+      header,
+      nav,
+      section,
+      footer {
+        padding: 1rem;
+      }
+
+      header {
+        background: #4caf50;
+        color: white;
+        text-align: center;
+      }
+
+      nav {
+        background: #fff;
+        border-bottom: 2px solid #ddd;
+        position: sticky;
+        top: 0;
+        z-index: 1000;
+      }
+
+      nav ul {
+        display: flex;
+        justify-content: center;
+        list-style: none;
+      }
+
+      nav a {
+        padding: 0.75rem 1.5rem;
+        text-decoration: none;
+        color: #4caf50;
+        font-weight: bold;
+      }
+
+      nav a:hover {
+        background: #4caf50;
+        color: #fff;
+      }
+
+      .container {
+        max-width: 1200px;
+        margin: auto;
+        padding: 1rem;
+      }
+
+      .grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 1.5rem;
+      }
+
+      .card {
+        background: #fff;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        overflow: hidden;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      }
+
+      .card img {
+        width: 100%;
+        height: 200px;
+        object-fit: contain;
+      }
+
+      .card-content {
+        padding: 1rem;
+      }
+
+      .card-content h3 {
+        margin-bottom: 0.5rem;
+        color: #4caf50;
+      }
+
+      .card-content p {
+        margin-bottom: 0.75rem;
+      }
+
+      .card-content a {
+        color: #2196f3;
+        text-decoration: none;
+      }
+
+      .card-content a:hover {
+        text-decoration: underline;
+      }
+
+      footer {
+        text-align: center;
+        margin-top: 2rem;
+        font-size: 0.9rem;
+      }
+
+      @media (max-width: 600px) {
+        nav ul {
+          flex-direction: column;
+        }
+
+        nav a {
+          text-align: center;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <h1>Guide d'arrosage des plantes</h1>
+    </header>
+    <nav>
+      <ul>
+        <li><a href="#interieur">Intérieur</a></li>
+        <li><a href="#exterieur">Extérieur</a></li>
+      </ul>
+    </nav>
+    <main class="container">
+      <!-- Section Plantes d'intérieur -->
+      <section id="interieur">
+        <h2>Plantes d'intérieur</h2>
+        <div class="grid">
+          <!-- Papyrus -->
+          <div class="card">
+            <img src="images/int/papyrus.jpg" alt="Papyrus - feuilles et fleurs">
+            <div class="card-content">
+              <h3>Papyrus</h3>
+              <p><strong>Arrosage :</strong> Arroser de façon à ce que l'eau arrive presque au bord du haut du pot. Il
+                aime avoir les pieds dans l'eau.</p>
+              <p><a
+                  href="https://www.jardiland.com/conseils-idees/papyrus-varietes-plantation-entretien-utilisations#quel-entretien-est-necessaire"
+                  target="_blank">Plus d'infos</a></p>
+            </div>
+          </div>
+          <!-- Begonia bambou/maculata -->
+          <div class="card">
+            <img src="images/int/begonia.jpg" alt="Begonia bambou ou maculata - feuilles et fleurs">
+            <div class="card-content">
+              <h3>Begonia bambou / maculata</h3>
+              <p><strong>Arrosage :</strong> Lorsque la surface du sol est sèche, environ 1 fois par semaine. Ne pas
+                laisser d'eau stagnante.</p>
+              <p><a href="https://plantespourtous.co/collections/plantes-lumineuses/products/begonia-maculata"
+                  target="_blank">Plus d'infos</a></p>
+            </div>
+          </div>
+          <!-- Plante ZZ -->
+          <div class="card">
+            <img src="images/int/plante-zz.jpg" alt="Plante ZZ - feuilles">
+            <div class="card-content">
+              <h3>Plante ZZ</h3>
+              <p><strong>Arrosage :</strong> Très modéré, laisser sécher complètement entre deux arrosages (tous les 2-3
+                semaines).</p>
+              <p><a href="https://plantespourtous.co/products/zamioculcas-zamiifolia" target="_blank">Plus d'infos</a>
+              </p>
+            </div>
+          </div>
+          <!-- Géranium rosat -->
+          <div class="card">
+            <img src="images/int/geranium-rosat.jpg" alt="Géranium rosat - feuilles et fleurs">
+            <div class="card-content">
+              <h3>Géranium rosat</h3>
+              <p><strong>Arrosage :</strong> Modéré, laisser sécher légèrement entre deux arrosages. Environ 2 fois par
+                semaine.</p>
+              <p><a href="https://www.picturethisai.com/fr/care/Pelargonium_graveolens.html" target="_blank">Plus
+                  d'infos</a></p>
+            </div>
+          </div>
+          <!-- Petit plant d'avocat -->
+          <div class="card">
+            <img src="images/int/avocat.jpg" alt="Petit plant d'avocat - feuilles">
+            <div class="card-content">
+              <h3>Petit plant d'avocat</h3>
+              <p><strong>Arrosage :</strong> Garder le sol légèrement humide. Arroser modérément 1 fois par semaine.</p>
+              <p><a href="https://avocatier.fr/entretien-d-un-avocatier-en-pot" target="_blank">Plus d'infos</a></p>
+            </div>
+          </div>
+          <!-- Petit plant de manguier -->
+          <div class="card">
+            <img src="images/int/manguier.jpg" alt="Petit plant de manguier - feuilles">
+            <div class="card-content">
+              <h3>Petit plant de manguier</h3>
+              <p><strong>Arrosage :</strong> Sol légèrement humide, environ 1 fois par semaine.</p>
+              <p><a href="https://www.ledevoir.com/plaisirs/jardinage/815538/noyau-manguier" target="_blank">Plus
+                  d'infos</a></p>
+            </div>
+          </div>
+          <!-- Dragonnier (Dracaena) -->
+          <div class="card">
+            <img src="images/int/dracaena.jpg" alt="Dragonnier - feuilles">
+            <div class="card-content">
+              <h3>Dragonnier (Dracaena marginata)</h3>
+              <p><strong>Arrosage :</strong> Modéré, laisser sécher les 2 cm supérieurs du sol. Environ 1 fois par semaine.</p>
+              <p><a href="https://plantespourtous.co/products/dracaena-marginata-bicolor" target="_blank">Plus
+                  d'infos</a></p>
+            </div>
+          </div>
+          <!-- Orpin de Siebold (Sedum Sieboldii) -->
+          <div class="card">
+            <img src="images/int/sedum-sieboldii.jpg" alt="Orpin de Siebold - feuilles et fleurs">
+            <div class="card-content">
+              <h3>Orpin de Siebold (Sedum Sieboldii)</h3>
+              <p><strong>Arrosage :</strong> Très peu, 1 fois toutes les 2 semaines. Laisser sécher complètement.</p>
+              <p><a
+                  href="https://www.willemsefrance.fr/blogs/nos-guides-de-jardinage/arrosage-du-sedum-conseils-pour-une-croissance-saine-1"
+                  target="_blank">Plus d'infos</a></p>
+            </div>
+          </div>
+          <!-- Succulente inconnue -->
+          <div class="card">
+            <img src="images/int/succulente.jpg" alt="Succulente en pot - jeune plant">
+            <div class="card-content">
+              <h3>Succulente (sepèce non identifiée)</h3>
+              <p><strong>Arrosage :</strong> Arroser très modérément, attendre que la terre soit bien sèche en profondeur avant d’arroser. Éviter l’eau stagnante.</p>
+              <p><a href="https://www.truffaut.com/arrosage-plantes-grasses.html" target="_blank">Plus d'infos</a></p>
+            </div>
+          </div>
+          <!-- Cactus de Noël -->
+          <div class="card">
+            <img src="images/int/cactus-noel.jpg" alt="Cactus de Noël - feuilles et fleurs">
+            <div class="card-content">
+              <h3>Cactus de Noël</h3>
+              <p><strong>Arrosage :</strong> Modéré en période de croissance (été), environ 1 fois par semaine, réduire en hiver.</p>
+              <p><a href="https://www.picturethisai.com/fr/question/Schlumbergera_truncata-water2.html"
+                  target="_blank">Plus d'infos</a></p>
+            </div>
+          </div>
+          <!-- Chlorophytum -->
+          <div class="card">
+            <img src="images/int/chlorophytum.jpg" alt="Chlorophytum - feuilles">
+            <div class="card-content">
+              <h3>Chlorophytum</h3>
+              <p><strong>Arrosage :</strong> Régulier, garder le sol légèrement humide, environ 1 fois par semaine.</p>
+              <p><a
+                  href="https://www.willemsefrance.fr/blogs/nos-guides-de-jardinage/comment-bien-arroser-votre-chlorophytum-1"
+                  target="_blank">Plus d'infos</a></p>
+            </div>
+          </div>
+          <!-- Potos -->
+          <div class="card">
+            <img src="images/int/pothos.jpg" alt="Pothos - feuilles">
+            <div class="card-content">
+              <h3>Pothos</h3>
+              <p><strong>Arrosage :</strong> Modéré, laisser sécher légèrement, environ 1 fois par semaine.</p>
+              <p><a href="https://plantespourtous.co/products/scindapsus-marble-queen" target="_blank">Plus d'infos</a>
+              </p>
+            </div>
+          </div>
+          <!-- Misère flumensis -->
+          <div class="card">
+            <img src="images/int/misere-flumensis.jpg" alt="Misère flumensis - feuilles">
+            <div class="card-content">
+              <h3>Misère flumensis</h3>
+              <p><strong>Arrosage :</strong> Sol toujours humide, arroser 2 fois par semaine.</p>
+              <p><a href="https://www.picturethisai.com/fr/wiki/Tradescantia_fluminensis.html" target="_blank">Plus
+                  d'infos</a></p>
+            </div>
+          </div>
+          <!-- Gros thym (bouture en eau) -->
+          <div class="card">
+            <img src="images/int/gros-thym.jpg" alt="Gros thym - bouture en eau">
+            <div class="card-content">
+              <h3>Gros thym (bouture en eau)</h3>
+              <p><strong>Arrosage :</strong> Changer l'eau 1 fois par semaine, garder la tige immergée.</p>
+              <p><a href="https://biostratege.com/le-gros-thym-plectranthus-amboinicus/" target="_blank">Plus
+                  d'infos</a></p>
+            </div>
+          </div>
+          <!-- Sensitive / Mimosa pudica -->
+          <div class="card">
+            <img src="images/mimosa-pudica.jpg" alt="Sensitive / Mimosa pudica - feuilles">
+            <div class="card-content">
+              <h3>Sensitive / Mimosa pudica</h3>
+              <p><strong>Arrosage :</strong> Sol légèrement humide, arroser 2-3 fois par semaine.</p>
+              <p><a href="https://www.truffaut.com/plante-sensitive-mimosa-pudica.html" target="_blank">Plus d'infos</a>
+              </p>
+            </div>
+          </div>
+          <!-- Bromelia Guzmania -->
+          <div class="card">
+            <img src="images/int/bromelia-guzmania.jpg" alt="Bromelia Guzmania">
+            <div class="card-content">
+              <h3>Bromelia Guzmania</h3>
+              <p><strong>Arrosage :</strong> Remplir le centre de la rosette avec de l’eau 2 à 3 fois par semaine. Arroser le terreau quand il est sec en surface (environ 1 fois par semaine). Ne pas laisser d'eau
+                stagnante dans la soucoupe. </p>
+              <p><a
+                  href="https://www.rustica.fr/autres-plantes-vertes/culture-guzmania-tout-ce-qu-il-faut-savoir,16550.html#paragraphe-4"
+                  target="_blank">Plus d'infos</a></p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section Plantes d'extérieur -->
+      <section id="exterieur">
+        <h2>Plantes d'extérieur</h2>
+        <div class="grid">
+          <!-- Begonia bambou/maculata ext -->
+          <div class="card">
+            <img src="images/ext/begonia.jpg" alt="Begonia bambou ou maculata extérieure">
+            <div class="card-content">
+              <h3>Begonia bambou / maculata</h3>
+              <p><strong>Arrosage :</strong> Modéré, 2 fois par semaine, laisser sécher légèrement entre.</p>
+              <p><a href="https://plantespourtous.co/collections/plantes-lumineuses/products/begonia-maculata/"
+                  target="_blank">Plus d'infos</a></p>
+            </div>
+          </div>
+          <!-- Verveine citronnelle -->
+          <div class="card">
+            <img src="images/verveine-citronnelle-ext.jpg" alt="Verveine citronnelle extérieure">
+            <div class="card-content">
+              <h3>Verveine citronnelle</h3>
+              <p><strong>Arrosage :</strong> 2 fois par semaine, laisser sécher légèrement.</p>
+              <p><a
+                  href="https://www.lapousseverte.fr/2021/06/04/verveine-citronnelle-conseils-jardinage-pour-votre-plante/"
+                  target="_blank">Plus d'infos</a></p>
+            </div>
+          </div>
+          <!-- Azalée / Rhododendron -->
+          <div class="card">
+            <img src="images/azalee-rhododendron.jpg" alt="Azalée / Rhododendron extérieure">
+            <div class="card-content">
+              <h3>Azalée / Rhododendron</h3>
+              <p><strong>Arrosage :</strong> Arroser par le bas en remplissant la soucoupe, 2 à 3 fois par semaine en
+                période chaude.</p>
+              <p><a href="https://www.hauert.com/ch-fr/offre/particuliers/guide/detail/lazalee-comme-plante-dinterieur"
+                  target="_blank">Plus d'infos</a></p>
+            </div>
+          </div>
+          <!-- Gros thym (bouture en eau) ext -->
+          <div class="card">
+            <img src="images/ext/gros-thym.jpg" alt="Gros thym - bouture en eau extérieure">
+            <div class="card-content">
+              <h3>Gros thym (bouture en eau)</h3>
+              <p><strong>Arrosage :</strong> Renouveler l'eau 1 fois par semaine, garder la tige immergée.</p>
+              <p><a href="https://biostratege.com/le-gros-thym-plectranthus-amboinicus/" target="_blank">Plus
+                  d'infos</a></p>
+            </div>
+          </div>
+          <!-- Petits plans d'agrumes -->
+          <div class="card">
+            <img src="images/ext/agrumes.jpg" alt="Petits plants d'agrumes extérieure">
+            <div class="card-content">
+              <h3>Petits plants d'agrumes</h3>
+              <p><strong>Arrosage :</strong> Modéré, 1-2 fois par semaine selon sécheresse du sol.</p>
+              <p><a
+                  href="https://www.pepiniere-vegetal85.fr/blog/post/8_entretien-des-agrumes-en-pot.html#:~:text=Il%20faut%20trouver%20le%20juste,semaine%2C%20selon%20vos%20conditions%20climatiques."
+                  target="_blank">Plus d'infos</a></p>
+            </div>
+          </div>
+          <!-- Misère flumensis ext -->
+          <div class="card">
+            <img src="images/ext/misere-flumensis.jpg" alt="Misère flumensis extérieure">
+            <div class="card-content">
+              <h3>Misère flumensis</h3>
+              <p><strong>Arrosage :</strong> Sol toujours humide, arroser 2 fois par semaine.</p>
+              <p><a href="https://www.picturethisai.com/fr/wiki/Tradescantia_fluminensis.html" target="_blank">Plus
+                  d'infos</a></p>
+            </div>
+          </div>
+          <!-- Ciboulette -->
+          <div class="card">
+            <img src="images/ext/ciboulette.jpg" alt="Ciboulette extérieure">
+            <div class="card-content">
+              <h3>Ciboulette</h3>
+              <p><strong>Arrosage :</strong> Garder le sol humide, 2-3 fois par semaine.</p>
+              <p><a
+                  href="https://urbancuisine.io/blogs/le-mag/comment-cultiver-la-ciboulette-en-pot-en-interieur#:~:text=En%20r%C3%A8gle%20g%C3%A9n%C3%A9rale%2C%20arrosez%20donc,pourront%20absorber%20correctement%20l'eau."
+                  target="_blank">Plus d'infos</a></p>
+            </div>
+          </div>
+
+          <!-- Menthe -->
+          <div class="card">
+            <img src="images/ext/menthe.jpg" alt="Ciboulette extérieure">
+            <div class="card-content">
+              <h3>Ciboulette</h3>
+              <p><strong>Arrosage :</strong> Garder la terre fraîche et humide, sans excès d’eau stagnante. Arroser 2 à
+                3 fois par semaine en été, réduire en hiver. </p>
+              <p><a
+                  href="https://www.rustica.fr/aromates-et-condiments/arroser-menthe,5769.html#:~:text=en%20arrosage%20automatique.-,Fr%C3%A9quence%20des%20arrosages%20de%20la%20menthe,les%20sujets%20cultiv%C3%A9s%20en%20pot."
+                  target="_blank">Plus d'infos</a></p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <p>
+        <img src="./plant.png" alt="Petite plante" style="height: 20px; vertical-align: middle; margin-right: 8px;">
+        &copy; 2025 Guide d'arrosage
+      </p>
+    </footer>
+
+    <style>
+      .img-fullscreen {
+        position: fixed !important;
+        top: 0;
+        left: 0;
+        width: 100vw !important;
+        height: 100vh !important;
+        object-fit: contain !important;
+        background: rgba(0, 0, 0, 0.96);
+        z-index: 9999;
+        margin: 0 !important;
+        box-shadow: none !important;
+        border-radius: 0 !important;
+        cursor: zoom-out;
+        display: block !important;
+      }
+
+      .img-backdrop {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        z-index: 9998;
+        background: rgba(0, 0, 0, 0.7);
+        display: block;
+      }
+    </style>
+    <script>
+      document.querySelectorAll('.card img').forEach(function (img) {
+        img.style.cursor = 'zoom-in';
+        img.addEventListener('click', function (e) {
+          if (!img.classList.contains('img-fullscreen')) {
+            // Affiche en plein écran
+            img.classList.add('img-fullscreen');
+            let backdrop = document.createElement('div');
+            backdrop.className = 'img-backdrop';
+            backdrop.onclick = function () {
+              img.classList.remove('img-fullscreen');
+              backdrop.remove();
+              document.body.style.overflow = '';
+            };
+            document.body.appendChild(backdrop);
+            document.body.style.overflow = 'hidden';
+          } else {
+            // Retour à la taille normale
+            img.classList.remove('img-fullscreen');
+            let backdrop = document.querySelector('.img-backdrop');
+            if (backdrop) backdrop.remove();
+            document.body.style.overflow = '';
+          }
+          e.stopPropagation();
+        });
+      });
+    </script>
+
+  </body>
+
 </html>
